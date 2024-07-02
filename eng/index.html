@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gratis factuur maker</title>
+    <meta name="description" content="AIMass Tailwind based SASS Template" />
+
+    <!-- Favicon  -->
+    <link rel="icon" href="assets/img/favicon.png" />
+
+    <!-- Icon Font -->
+    <link rel="stylesheet" href="assets/fonts/iconfonts/font-awesome/stylesheet.css" />
+    <!-- Site font -->
+    <link rel="stylesheet" href="assets/fonts/webfonts/inter/stylesheet.css" />
+    <link rel="stylesheet" href="assets/fonts/webfonts/dm-sans/stylesheet.css" />
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/vendors/jos.css" />
+    <link rel="stylesheet" href="assets/css/vendors/menu.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css" />
+
+    <!-- Development css -->
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- Production css -->
+    <!-- <link rel="stylesheet" href="assets/css/style.min.css"> -->
+    <style>
+        input {
+    border: 1px solid gray !important;
+}
+        .form-input {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .form-input label {
+            margin-bottom: 0.5rem;
+        }
+    
+        .form-input input:focus,
+        .form-input textarea:focus {
+            border-color: #6366f1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper relative z-[1] bg-white">
+        <!--...::: Header Start :::... -->
+        <header class="site-header site-header--absolute is--white py-3" id="sticky-menu">
+            <div class="container-default">
+                <div class="flex items-center justify-between gap-x-8">
+                    <!-- Header Logo -->
+                    <a href="index.html" class="">
+                        <!-- <img src="assets/img/logo-violet-dark.png" alt="Masco" width="109" height="24" /> -->
+                    </a>
+                    <!-- Header Logo -->
+
+                    <!-- Header Navigation -->
+                    <div class="menu-block-wrapper">
+                        <div class="menu-overlay"></div>
+                        <nav class="menu-block" id="append-menu-header">
+                            <div class="mobile-menu-head">
+                                <div class="go-back">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </div>
+                                <div class="current-menu-title"></div>
+                                <div class="mobile-menu-close">&times;</div>
+                            </div>
+                            <ul class="site-menu-main">
+                                <li class="nav-item nav-item-has-children">
+                                    <a href="index.html" class="nav-link-item drop-trigger">Home</a>
+                                </li>
+                                <li class="nav-item nav-item-has-children">
+                                    <a href="#section-features" class="nav-link-item drop-trigger">Features</a>
+                                </li>
+                                <li class="nav-item nav-item-has-children">
+                                    <a href="#section-about" class="nav-link-item drop-trigger">About</a>
+                                </li>
+                                <li class="nav-item nav-item-has-children">
+                                    <a href="#section-course" class="nav-link-item drop-trigger">Course</a>
+                                </li>
+                                <li class="nav-item nav-item-has-children">
+                                    <a href="#section-faq" class="nav-link-item drop-trigger">FAQ</a>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- Header Navigation -->
+
+                    <!-- Header User Event -->
+                    <div class="flex items-center gap-6">
+                        <a href="login.html" class="btn-text hidden hover:text-ColorViolet sm:inline-block">Login</a>
+
+                        <a href="signup.html" class="group relative hidden sm:inline-block">
+                            <div class="btn is-rounded is-violet">Sign up free</div>
+                            <div class="is-rounded absolute inset-0 -z-10 translate-y-[5px] bg-ColorBlack transition-all duration-300 ease-linear group-hover:translate-y-0"></div>
+                        </a>
+                        <!-- Responsive Offcanvas Menu Button -->
+                        <div class="block lg:hidden">
+                            <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Header User Event -->
+                </div>
+            </div>
+        </header>
+        <!--...::: Header End :::... -->
+
+        <main class="main-wrapper relative overflow-hidden">
+            <!--...::: Hero Section Start :::... -->
+            <section class="section-hero">
+                <div class="relative z-10">
+                    <!-- Hero Space -->
+                    <div class="pb-20 pt-[100px] md:pt-[120px] lg:pb-[110px] lg:pt-[190px]">
+                        <!-- Section Container -->
+                        <div class="container-default">
+                            <!-- Hero Area Block -->
+                            <div class="grid items-center gap-x-[60px] gap-y-12 lg:grid-cols-[1fr_0.8fr] xl:gap-x-[100px]">
+                                <!-- Hero Content Block -->
+                                <div class="mx-auto max-w-[580px] text-center lg:max-w-none lg:text-left">
+                                    <h1 class="mb-6 font-DmSans text-[32px] font-bold leading-[1.04] -tracking-[1px] sm:text-5xl lg:text-[65px] xl:text-[78px] xxl:text-[90px]">
+                                        Maak je factuur in 1 minuut, helemaal gratis!
+                                    </h1>
+                                    <p class="mb-8 lg:mb-[50px]">
+                                        Wil je snel een factuur maken die er professioneel uitziet? Gebruik dan onze tool beneden en genereer een gratis factuur.
+                                    </p>
+
+                                    <a href="#" class="group relative inline-block">
+                                        <div class="btn is-large is-rounded is-violet">
+                                            Start
+                                        </div>
+                                        <div class="is-rounded absolute inset-0 -z-10 translate-y-[5px] bg-ColorBlack transition-all duration-300 ease-linear group-hover:translate-y-0"></div>
+                                    </a>
+                                </div>
+                                <!-- Hero Content Block -->
+
+                                <!-- Hero Image Block -->
+                                <div class="flex justify-center lg:justify-start">
+                                    <div class="relative inline-block">
+                                        <img src="assets/img/th-4/hero-img.png" alt="hero-img" width="420" height="532" class="max-w-full" />
+                                        <!-- Hero Image Shape -->
+                                        <div class="absolute right-0 top-1 flex h-[150px] w-[150px] items-center justify-center text-center xl:left-[320px]">
+                                            <img src="assets/img/elements/hero-4-start-shape-1.svg" alt="hero-4-start-shape-1" width="150" height="150" class="rotate-360" />
+                                            <span class="absolute inline-block max-w-[100px] text-base font-bold text-ColorBlack">100% gratis</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Hero Image Block -->
+                            </div>
+                            <!-- Hero Area Block -->
+                        </div>
+                        <!-- Section Container -->
+                    </div>
+                    <!-- Hero Space -->
+
+                    <!-- Hero Background Shape -->
+                    <img src="assets/img/elements/hero-4-bg-shape.svg" alt="hero-4-bg-shape" height="1038" width="1038" class="absolute right-0 top-0 -z-10" />
+                    <!-- Background Divider Shape -->
+                    <div class="min-h-[65px] w-full bg-[url('../img/elements/home-4-divider-shape-1.svg')] bg-contain bg-[center_bottom] bg-repeat-x"></div>
+                </div>
+            </section>
+            <!--...::: Hero Section End :::... -->
+
+<section>
+    <!-- <div class="container mx-0  z-10  bg-[#F5EFEB]"> -->
+        <!-- <h1 class="text-2xl font-bold mb-6">Invoice Tool</h1> -->
+
+        <div class="py-10 bg-[#F5EFEB]">
+            <div class="p-6 rounded-lg shadow-md bg-[#F5EFEB]">
+                <h2 class="text-2xl font-bold mb-6">Invoice Generator</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Sender Information -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Sender Information</h3>
+                        <!-- <label class="block mb-2">Logo</label>
+                            <input type="file" id="logoInput" class="mb-4"> -->
+                        <label class="block mb-2">Company Name</label>
+                        <input type="text" id="senderCompanyName" class="w-full mb-4">
+                        <label class="block mb-2">Street</label>
+                        <input type="text" id="senderStreet" class="w-full mb-4">
+                        <label class="block mb-2">Postcode</label>
+                        <input type="text" id="senderPostcode" class="w-full mb-4">
+                        <label class="block mb-2">City</label>
+                        <input type="text" id="senderCity" class="w-full mb-4">
+                        <label class="block mb-2">VAT Number</label>
+                        <input type="text" id="senderVatNumber" class="w-full mb-4">
+                    </div>
+        
+                    <!-- Client Information -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Client Information</h3>
+                        <label class="block mb-2">Client Name</label>
+                        <input type="text" id="clientName" class="w-full mb-4">
+                        <label class="block mb-2">Street</label>
+                        <input type="text" id="clientStreet" class="w-full mb-4">
+                        <label class="block mb-2">Postcode</label>
+                        <input type="text" id="clientPostcode" class="w-full mb-4">
+                        <label class="block mb-2">City</label>
+                        <input type="text" id="clientCity" class="w-full mb-4">
+                        <label class="block mb-2">VAT Number</label>
+                        <input type="text" id="clientVatNumber" class="w-full mb-4">
+                    </div>
+                </div>
+                <!-- Dates -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                    <div>
+                        <label class="block mb-2">Creation Date</label>
+                        <input type="date" id="creationDate" class="w-full mb-4">
+                    </div>
+                    <div>
+                        <label class="block mb-2">Due Date</label>
+                        <input type="date" id="dueDate" class="w-full mb-4">
+                    </div>
+                </div>
+                    <!-- Currency Dropdown -->
+                    <div class="mt-6">
+                        <label class="block mb-2">Currency</label>
+                        <select id="currency" class="w-full mb-4">
+                            <option value="€">EUR - Euro</option>
+                            <option value="$">USD - US Dollar</option>
+                            <option value="£">GBP - Britse pond</option>
+                            <!-- Add more currencies as needed -->
+                        </select>
+                    </div>
+        
+                <!-- Product Table -->
+                <div class="mt-6">
+                    <h3 class="text-xl font-semibold mb-4">Products</h3>
+                    <div id="productContainer"></div>
+                    <button id="addProduct" class="btn">Add Product</button>
+                </div>
+        
+                <!-- Generate Invoice Button -->
+                <div class="mt-6 flex justify-end">
+                    <button id="generateInvoice" class="btn is-large is-rounded is-violet">Generate
+                        Invoice</button>
+                        
+                </div>
+            </div>
+        </div>
+
+
+                <div
+                    class="min-h-[65px] w-full rotate-180 bg-[url('../img/elements/home-4-divider-shape-1.svg')] bg-contain bg-[center_bottom] bg-repeat-x">
+                </div>
+
+</section>
+
+            <!--...::: Features Section End :::... -->
+
+            <!--...::: Content Section Start :::... -->
+            <section class="section-content" id="section-about">
+                <!-- Section Space -->
+                <div class="section-space">
+                    <!-- Section Container -->
+                    <div class="container-default">
+                        <!-- Content Area -->
+                        <div class="grid items-center gap-x-[60px] gap-y-10 md:grid-cols-[0.8fr_minmax(0,_1fr)] lg:gap-x-20 xl:gap-x-[110px]">
+                            <!-- Content Block -->
+                            <div class="jos order-2" data-jos_animation="fade-right">
+                                <!-- Section Wrapper -->
+                                <div>
+                                    <!-- Section Block -->
+                                    <div class="mb-5">
+                                        <h2 class="font-DmSans -tracking-[1px]">
+                                            Propel your career & expand your knowledge at any level
+                                        </h2>
+                                    </div>
+                                    <!-- Section Block -->
+                                </div>
+                                <!-- Section Wrapper -->
+                                <p>
+                                    Masco is an online course class that provides various
+                                    categories of courses ranging from design, photography,
+                                    marking, and many more. With more than 250 schools and
+                                    colleges and 50,000+ students
+                                </p>
+                                <p>
+                                    from multiple countries. With this curriculum, it is hoped
+                                    that students can learn with experts in their respective
+                                    fields anytime & anywhere.
+                                </p>
+                                <div class="mt-[50px]">
+                                    <a href="#" class="group relative z-10 inline-block">
+                                        <div class="btn is-large is-rounded is-violet">
+                                            Explore more
+                                        </div>
+                                        <div class="is-rounded absolute inset-0 -z-10 translate-y-[5px] bg-ColorBlack transition-all duration-300 ease-linear group-hover:translate-y-0"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Content Block -->
+
+                            <!-- Content Image Block -->
+                            <div class="jos order-1 flex justify-center" data-jos_animation="fade-left">
+                                <img src="assets/img/th-4/content-img-1.png" alt="content-img-1" width="450" height="532" />
+                            </div>
+                            <!-- Content Image Block -->
+                        </div>
+                        <!-- Content Area -->
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Space -->
+            </section>
+            <!--...::: Content Section End :::... -->
+
+  
+            <!--...::: Ticket Slider Section End :::... -->
+
+            <!--...::: Course Section End :::... -->
+
+            <!--...::: Content Section Start :::... -->
+            <section class="section-content">
+                <!-- Section Space -->
+                <div class="section-space">
+                    <!-- Section Container -->
+                    <div class="container-default">
+                        <!-- Content Area -->
+                        <div class="grid items-center gap-x-[60px] gap-y-10 md:grid-cols-[1fr_minmax(0,_0.8fr)] lg:gap-x-20 xl:gap-x-[110px]">
+                            <!-- Content Block -->
+                            <div class="jos order-1" data-jos_animation="fade-right">
+                                <!-- Section Wrapper -->
+                                <div>
+                                    <!-- Section Block -->
+                                    <div class="mb-5">
+                                        <h2 class="font-DmSans -tracking-[1px]">
+                                            Share your knowledge & experience with others
+                                        </h2>
+                                    </div>
+                                    <!-- Section Block -->
+                                </div>
+                                <!-- Section Wrapper -->
+                                <p>
+                                    We believe everyone has something to give. Share your unique
+                                    skills & experience with students around the world by
+                                    teaching free or paid.
+                                </p>
+                                <ul class="flex flex-col gap-5 font-semibold text-ColorBlack">
+                                    <li>
+                                        <span class="mr-3 inline-block text-xl"><i class="fa-solid fa-badge-check"></i></span>
+                                        Free version can save unlimited workouts & custom routines
+                                    </li>
+                                    <li>
+                                        <span class="mr-3 inline-block text-xl"><i class="fa-solid fa-badge-check"></i></span>
+                                        Track progress with graphs and automatically back up data
+                                    </li>
+                                    <li>
+                                        <span class="mr-3 inline-block text-xl"><i class="fa-solid fa-badge-check"></i></span>
+                                        Connect easily with instructor for tips, feedback and
+                                        support
+                                    </li>
+                                </ul>
+                                <div class="mt-[50px]">
+                                    <a href="#" class="group relative z-10 inline-block">
+                                        <div class="btn is-large is-rounded is-violet">
+                                            Become an instructor
+                                        </div>
+                                        <div class="is-rounded absolute inset-0 -z-10 translate-y-[5px] bg-ColorBlack transition-all duration-300 ease-linear group-hover:translate-y-0"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Content Block -->
+
+                            <!-- Content Image Block -->
+                            <div class="jos order-2 flex justify-center" data-jos_animation="fade-left">
+                                <img src="assets/img/th-4/content-img-2.png" alt="content-img-1" width="450" height="532" />
+                            </div>
+                            <!-- Content Image Block -->
+                        </div>
+                        <!-- Content Area -->
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Space -->
+            </section>
+            <!--...::: Content Section End :::... -->
+
+            <!--...::: Testimonial Section Start :::... -->
+            <!--...::: Testimonial Section End :::... -->
+
+            <!--...::: FAQ Section Start :::... -->
+            <section class="section-FAQ" id="section-faq">
+                <div class="realative">
+                    <!-- Section Background -->
+                    <div class="bg-[#F5EFEB]">
+                        <!-- Section Space -->
+                        <div class="section-space">
+                            <!-- Section Container -->
+                            <div class="container-default">
+                                <!-- FAQ Area -->
+                                <div class="grid items-center gap-x-6 gap-y-10 md:grid-cols-2">
+                                    <!-- Content Block -->
+                                    <div class="jos" data-jos_animation="fade-right">
+                                        <!-- Section Wrapper -->
+                                        <div>
+                                            <!-- Section Block -->
+                                            <div class="mb-5">
+                                                <h2 class="font-DmSans -tracking-[1px]">
+                                                    Frequently asked questions about our courses
+                                                </h2>
+                                            </div>
+                                            <!-- Section Block -->
+                                        </div>
+                                        <!-- Section Wrapper -->
+                                        <p>
+                                            We encourage our students and teachers to ask us any
+                                            questions regarding our courses and classes. Our skilled
+                                            mentors are ready to answer all your questions 24/7.
+                                        </p>
+                                    </div>
+                                    <!-- Content Block -->
+
+                                    <!-- FAQ Block -->
+                                    <div class="jos flex justify-center" data-jos_animation="fade-left">
+                                        <!-- Accordion List -->
+                                        <ul class="mx-auto max-w-[1076px] rounded-[10px] border-4 border-ColorBlack">
+                                            <!-- Accordion Item -->
+                                            <li class="accordion-item active last:border-2-0 overflow-hidden border-b-4 border-ColorBlack p-[30px]">
+                                                <!-- Accordion Header -->
+                                                <div class="accordion-header relative pr-8 text-xl font-semibold text-ColorBlack">
+                                                    <button class="flex-1 text-left">
+                                                        Q. How do I register for the online courses?
+                                                    </button>
+                                                    <div class="accordion-icon-2 absolute right-0 top-0">
+                                                        <i class="fa-solid fa-chevron-down"></i>
+                                                    </div>
+                                                </div>
+                                                <!-- Accordion Header -->
+                                                <!-- Accordion Body -->
+                                                <div class="accordion-body max-w-[826px] opacity-80">
+                                                    <p class="pt-5">
+                                                        Click the "register yourself" button to go to the
+                                                        online catalog. Click the "add to cart" link for
+                                                        one or more packages of courses.
+                                                    </p>
+                                                </div>
+                                                <!-- Accordion Body -->
+                                            </li>
+                                            <!-- Accordion Item -->
+                                            <!-- Accordion Item -->
+                                            <li class="accordion-item overflow-hidden border-b-4 border-ColorBlack p-[30px] last:border-b-0">
+                                                <!-- Accordion Header -->
+                                                <div class="accordion-header relative pr-8 text-xl font-semibold text-ColorBlack">
+                                                    <button class="flex-1 text-left">
+                                                        Q. What is the time commitment for the courses?
+                                                    </button>
+                                                    <div class="accordion-icon-2 absolute right-0 top-0">
+                                                        <i class="fa-solid fa-chevron-down"></i>
+                                                    </div>
+                                                </div>
+                                                <!-- Accordion Header -->
+                                                <!-- Accordion Body -->
+                                                <div class="accordion-body max-w-[826px] opacity-80">
+                                                    <p class="pt-5">
+                                                        Click the "register yourself" button to go to the
+                                                        online catalog. Click the "add to cart" link for
+                                                        one or more packages of courses.
+                                                    </p>
+                                                </div>
+                                                <!-- Accordion Body -->
+                                            </li>
+                                            <!-- Accordion Item -->
+                                            <!-- Accordion Item -->
+                                            <li class="accordion-item overflow-hidden border-b-4 border-ColorBlack p-[30px] last:border-b-0">
+                                                <!-- Accordion Header -->
+                                                <div class="accordion-header relative pr-8 text-xl font-semibold text-ColorBlack">
+                                                    <button class="flex-1 text-left">
+                                                        Q. Can I receive college credit for these courses?
+                                                    </button>
+                                                    <div class="accordion-icon-2 absolute right-0 top-0">
+                                                        <i class="fa-solid fa-chevron-down"></i>
+                                                    </div>
+                                                </div>
+                                                <!-- Accordion Header -->
+                                                <!-- Accordion Body -->
+                                                <div class="accordion-body max-w-[826px] opacity-80">
+                                                    <p class="pt-5">
+                                                        Click the "register yourself" button to go to the
+                                                        online catalog. Click the "add to cart" link for
+                                                        one or more packages of courses.
+                                                    </p>
+                                                </div>
+                                                <!-- Accordion Body -->
+                                            </li>
+                                            <!-- Accordion Item -->
+                                        </ul>
+                                        <!-- Accordion List -->
+                                    </div>
+                                    <!-- FAQ Block -->
+                                </div>
+                                <!-- FAQ Area -->
+                            </div>
+                            <!-- Section Container -->
+                        </div>
+                        <!-- Section Space -->
+                    </div>
+                    <!-- Section Background -->
+                    <!-- Background Divider Shape -->
+                    <div class="min-h-[65px] w-full rotate-180 bg-[url('../img/elements/home-4-divider-shape-1.svg')] bg-contain bg-[center_bottom] bg-repeat-x"></div>
+                </div>
+            </section>
+            <!--...::: FAQ Section End :::... -->
+
+            <!--...::: Newsletter Section Start :::... -->
+            <section class="section-newsletter">
+                <div class="relative">
+                    <!-- Section Space -->
+                    <div class="section-space">
+                        <!-- Section Container -->
+                        <div class="container-default">
+                            <!-- Newsletter Area -->
+                            <div class="jos mx-auto flex max-w-[720px] flex-col justify-center text-center">
+                                <h2 class="mb-5 font-DmSans -tracking-[1px]">
+                                    Start learning today and expand your knowledge at any level
+                                </h2>
+                                <p class="mb-[50px]">
+                                    We have easily downloadable learning app on any device and
+                                    anywhere to experience an exclusive e-learning platform for
+                                    world-class education.
+                                </p>
+                                <div class="flex flex-wrap justify-center gap-5">
+                                    <a href="#" aria-label="apple-app-store">
+                                        <img src="assets/img/icons/icon-round-apple-app-store.svg" alt="icon-round-apple-app-store" width="188" height="60" />
+                                    </a>
+                                    <a href="#" aria-label="google-play-store">
+                                        <img src="assets/img/icons/icon-round-google-play-store.svg" alt="icon-round-google-play-store" width="188" height="60" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Newsletter Area -->
+                        </div>
+                        <!-- Section Container -->
+                    </div>
+                    <!-- Section Space -->
+
+                    <!-- Background Divider Shape -->
+                    <div class="absolute bottom-0 left-0 -mb-px h-10 w-full bg-[url('../img/elements/home-4-divider-shape-1.svg')] bg-cover bg-[center_top] bg-repeat-x xxl:h-14"></div>
+                </div>
+            </section>
+            <!--...::: Newsletter Section End :::... -->
+        </main>
+
+        <!--...::: Footer Section Start :::... -->
+        <footer class="section-footer">
+            <div class="bg-[#F5EFEB]">
+                <!-- Footer Area Center -->
+                <div class="text-ColorBlack">
+                    <!-- Footer Center Spacing -->
+                    <div class="py-[60px] lg:py-20 xl:py-[100px]">
+                        <!-- Section Container -->
+                        <div class="container-default">
+                            <!-- Footer Widget List -->
+                            <div class="grid gap-x-16 gap-y-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[1fr_repeat(3,_auto)] xl:gap-x-24 xxl:gap-x-[134px]">
+                                <!-- Footer Widget Item -->
+                                <div class="flex flex-col gap-y-7 md:col-span-3 lg:col-span-1">
+                                    <!-- Footer Logo -->
+                                    <a href="index.html">
+                                        <!-- <img src="assets/img/logo-violet-dark.png" alt="Masco" width="109" height="24" /> -->
+                                    </a>
+                                    <!-- Footer Content -->
+                                    <div>
+                                        <!-- Footer About Text -->
+                                        <div class="lg:max-w-[416px]">
+                                            We are strategic & creative digital agency who are
+                                            focused on user experience, mobile, social, data
+                                            gathering and promotional offerings.
+                                        </div>
+                                        <!-- Footer Mail -->
+                                        <a href="mailto:yourdemo@email.com" class="my-6 block underline-offset-4 transition-all duration-300 hover:underline">yourdemo@email.com</a>
+                                        <!-- Footer Social Link -->
+                                        <div class="flex flex-wrap gap-5">
+                                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-ColorBlack/10 text-sm text-ColorBlack transition-all duration-300 hover:bg-ColorViolet hover:text-white" aria-label="twitter">
+                                                <i class="fa-brands fa-x-twitter"></i>
+                                            </a>
+                                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-ColorBlack/10 text-sm text-ColorBlack transition-all duration-300 hover:bg-ColorViolet hover:text-white" aria-label="facebook">
+                                                <i class="fa-brands fa-facebook-f"></i>
+                                            </a>
+                                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-ColorBlack/10 text-sm text-ColorBlack transition-all duration-300 hover:bg-ColorViolet hover:text-white" aria-label="instagram">
+                                                <i class="fa-brands fa-instagram"></i>
+                                            </a>
+                                            <a href="https://www.github.com/" target="_blank" rel="noopener noreferrer" class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-ColorBlack/10 text-sm text-ColorBlack transition-all duration-300 hover:bg-ColorViolet hover:text-white" aria-label="github">
+                                                <i class="fa-brands fa-github"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- Footer Content -->
+                                </div>
+                                <!-- Footer Widget Item -->
+
+                                <!-- Footer Widget Item -->
+                                <div class="flex flex-col gap-y-7 md:col-span-1 lg:col-span-1">
+                                    <!-- Footer Widget Title -->
+                                    <div class="text-xl font-semibold capitalize">
+                                        Primary Pages
+                                    </div>
+                                    <!-- Footer Navbar -->
+                                    <ul class="flex flex-col gap-y-[10px] capitalize">
+                                        <li>
+                                            <a href="index.html" class="hover:opcity-100 text-ColorBlack underline-offset-4 transition-all duration-300 ease-linear hover:underline">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="about.html" class="hover:opcity-100 text-ColorBlack underline-offset-4 transition-all duration-300 ease-linear hover:underline">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="services.html" class="hover:opcity-100 text-ColorBlack underline-offset-4 transition-all duration-300 ease-linear hover:underline">Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="pricing.html" class="hover:opcity-100 text-ColorBlack underline-offset-4 transition-all duration-300 ease-linear hover:underline">pricing</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html" class="hover:opcity-100 text-ColorBlack underline-offset-4 transition-all duration-300 ease-linear hover:underline">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Footer Widget Item -->
+
+                                <!-- Footer Widget Item -->
+                                <div class="flex flex-col gap-y-6 md:col-span-1 lg:col-span-1">
+                                    <!-- Footer Title -->
+                                    <div class="text-xl font-semibold capitalize">
+                                        Utility pages
+                                    </div>
+                                    <!-- Footer Title -->
+
+                                    <!-- Footer Navbar -->
+                                    <ul class="flex flex-col gap-y-[10px] capitalize">
+                                        <li>
+                                            <a href="signup.html" class="hover:opcity-100 text-ColorBlack underline-offset-4 transition-all duration-300 ease-linear hover:underline">Signup</a>
+                                        </li>
+                                        <li>
+                                            <a href="login.html" class="hover:opcity-100 text-ColorBlack underline-offset-4 transition-all duration-300 ease-linear hover:underline">Login</a>
+                                        </li>
+                                        <li>
+                                            <a href="error-404.html" class="hover:opcity-100 text-ColorBlack underline-offset-4 transition-all duration-300 ease-linear hover:underline">404 Not found</a>
+                                        </li>
+                                        <li>
+                                            <a href="reset-password.html" class="hover:opcity-100 text-ColorBlack underline-offset-4 transition-all duration-300 ease-linear hover:underline">Password Reset</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Footer Widget Item-->
+
+                                <!-- Footer Widget Item -->
+                                <div class="flex flex-col gap-y-6 md:col-span-1 lg:col-span-1">
+                                    <!-- Footer Title -->
+                                    <div class="text-xl font-semibold capitalize">
+                                        Resources
+                                    </div>
+                                    <!-- Footer Title -->
+
+                                    <!-- Footer Navbar -->
+                                    <ul class="flex flex-col gap-y-[10px] capitalize">
+                                        <li>
+                                            <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer" class="hover:opcity-100 text-ColorBlack underline-offset-4 transition-all duration-300 ease-linear hover:underline">Support</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer" class="hover:opcity-100 text-ColorBlack underline-offset-4 transition-all duration-300 ease-linear hover:underline">Privacy policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer" class="hover:opcity-100 text-ColorBlack underline-offset-4 transition-all duration-300 ease-linear hover:underline">Terms & Conditions</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer" class="hover:opcity-100 text-ColorBlack underline-offset-4 transition-all duration-300 ease-linear hover:underline">Strategic finance</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer" class="hover:opcity-100 text-ColorBlack underline-offset-4 transition-all duration-300 ease-linear hover:underline">Video guide</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Footer Widget Item -->
+                            </div>
+                            <!-- Footer Widget List -->
+                        </div>
+                        <!-- Section Container -->
+                    </div>
+                    <!-- Footer Center Spacing -->
+                </div>
+                <!-- Footer Area Center -->
+                <div class="horizontal-line bg-ColorBlack"></div>
+                <!-- Footer Bottom -->
+                <div>
+                    <!-- Footer Bottom Spacing -->
+                    <div class="py-[18px]">
+                        <!-- Section Container -->
+                        <div class="container-default">
+                            <div class="text-center">
+                                &copy; Copyright 2024, All Rights Reserved by Mthemeus
+                            </div>
+                        </div>
+                        <!-- Section Container -->
+                    </div>
+                    <!-- Footer Bottom Spacing -->
+                </div>
+                <!-- Footer Bottom -->
+            </div>
+        </footer>
+        <!--...::: Footer Section End :::... -->
+    </div>
+
+    <!--Vendor js-->
+    <script src="assets/js/vendors/counterup.js" type="module"></script>
+    <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendors/fslightbox.js"></script>
+    <script src="assets/js/vendors/jos.min.js"></script>
+    <script src="assets/js/vendors/menu.js"></script>
+
+    <!-- Main js -->
+    <script src="assets/js/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/2.3.1/jspdf.plugin.autotable.min.js"></script>
+
+            <script src="invoice.js"></script>
+
+</body>
+
+</html>
