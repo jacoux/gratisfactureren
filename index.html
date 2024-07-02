@@ -561,6 +561,12 @@
         </footer>
         <!--...::: Footer Section End :::... -->
     </div>
+    <script>
+        if (window.mustGetPaid === undefined) {
+            // adblocker detected, show fallback
+            showFallbackImage();
+        }
+    </script>
 
     <!--Vendor js-->
     <script src="assets/js/vendors/counterup.js" type="module"></script>
