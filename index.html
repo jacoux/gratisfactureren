@@ -173,7 +173,7 @@
                                         Maak je factuur in 1 minuut, helemaal gratis!
                                     </h1>
                                     <p class="mb-8 lg:mb-[50px]">
-                                        Wil je snel een factuur maken die er professioneel uitziet? Gebruik dan onze tool beneden en genereer een gratis factuur.
+                                        Wil je snel een factuur maken dat er bovendien ook professioneel uitziet? Gebruik dan onze gratis tool hieronder en genereer onmiddellijk een gratis factuur.
                                     </p>
 
                                     <a href="#invoice" class="group relative inline-block">
@@ -229,13 +229,13 @@
                             <input type="file" id="logoInput" class="mb-4"> -->
                         <label class="block mb-2">Bedrijfsnaam *</label>
                         <input type="text" id="senderCompanyName" class="w-full mb-4">
-                        <label class="block mb-2">Straat + nummer</label>
+                        <label class="block mb-2">Straat + nummer + busnummer</label>
                         <input type="text" id="senderStreet" class="w-full mb-4">
                         <label class="block mb-2">Postcode</label>
                         <input type="text" id="senderPostcode" class="w-full mb-4">
-                        <label class="block mb-2">Stad of dorp</label>
+                        <label class="block mb-2">Stad of gemeente</label>
                         <input type="text" id="senderCity" class="w-full mb-4">
-                        <label class="block mb-2">BTW Number</label>
+                        <label class="block mb-2">BTW nummer</label>
                         <input type="text" id="senderVatNumber" class="w-full mb-4">
                     </div>
         
@@ -246,11 +246,11 @@
                         <h3 class="text-xl font-semibold mb-4">Klant</h3>
                         <label class="block mb-2">Klant naam *</label>
                         <input type="text" id="clientName" class="w-full mb-4">
-                        <label class="block mb-2">Straat + nummer</label>
+                        <label class="block mb-2">Straat + nummer + busnummer</label>
                         <input type="text" id="clientStreet" class="w-full mb-4">
                         <label class="block mb-2">Postcode</label>
                         <input type="text" id="clientPostcode" class="w-full mb-4">
-                        <label class="block mb-2">Stad of dorp</label>
+                        <label class="block mb-2">Stad of gemeente</label>
                         <input type="text" id="clientCity" class="w-full mb-4">
                         <label class="block mb-2">BTW nummer</label>
                         <input type="text" id="clientVatNumber" class="w-full mb-4">
@@ -258,7 +258,7 @@
                 </div>
                         <!-- Currency Dropdown -->
                         <div class="mt-6">
-                            <label class="block mb-2">Currency</label>
+                            <label class="block mb-2">Munteenheid</label>
                             <select id="currency" class="w-full mb-4">
                                 <option value="€">EUR - Euro</option>
                                 <option value="$">USD - US Dollar</option>
@@ -288,7 +288,7 @@
                 <!-- Generate Invoice Button -->
                 <div class="mt-6 flex justify-end">
                     <button id="generateInvoice" class="btn is-large is-rounded is-violet">Maak
-                        Factuur</button>
+                        factuur</button>
 
                         
                 </div>
@@ -310,13 +310,15 @@
                             <!-- Newsletter Area -->
                             <div class="jos mx-auto flex max-w-[720px] flex-col justify-center text-center">
                                 <h2 class="mb-5 font-DmSans -tracking-[1px]">
-                                    Niet elke keer opnieuw je gegevens ingeven?
+                                    Niet elke keer opnieuw je gegevens moeten ingeven?
                                 </h2>
                                 <p class="mb-[50px]">
-                                    We zijn volop bezig om een tool te bouwen waar je je klantgegevens in kan opslaan, alsook je
-                                    eigen bedrijfsgegevens.
+                                    We zijn momenteel volop bezig om een tool te bouwen waar je je klantgegevens in kan opslaan, alsook je
+                                    eigen bedrijfsgegevens. Deze tool zal ook gratis aangeboden worden en bevat tal van opties (zoals het 
+                                    toevoegen van QR codes, opslagcapaciteit, het automatisch versturen van het factuur naar de betreffende klant,
+                                    het versturen van herinnerengen bij niet-betaling,...). 
                                 </p>
-                                <label>Blijf op de hoogte</label>
+                                <label>Interesse? Voer hieronder je emailadres in en we houden je op de hoogte:</label>
                                 <div class="">
                                     <input type="email" id="email" class="w-full mb-4"> <button
                                         class="bg-black text-white p-6 rounded-xl">Opslaan</button>
@@ -386,7 +388,7 @@
                                         </div>
                                         <!-- Section Wrapper -->
                                         <p>
-                                            Gratis factureren is een product van financewizard. We streven ernaar om toegankelijke en gebruiksvriendelijke tools te maken voor odnernemers tegen een lage prijs.
+                                            Gratis factureren is een product van financewizard. We streven ernaar om toegankelijke en gebruiksvriendelijke tools te maken voor ondernemers tegen een lage prijs.
                                         </p>
                                     </div>
                                     <!-- Content Block -->
@@ -400,7 +402,7 @@
                                                 <!-- Accordion Header -->
                                                 <div class="accordion-header relative pr-8 text-xl font-semibold text-ColorBlack">
                                                     <button class="flex-1 text-left">
-                                                        Q. Wat gebeurd met mijn gegevens?
+                                                        Q. Wat gebeurt met mijn gegevens?
                                                     </button>
                                                     <div class="accordion-icon-2 absolute right-0 top-0">
                                                         <i class="fa-solid fa-chevron-down"></i>
@@ -410,7 +412,10 @@
                                                 <!-- Accordion Body -->
                                                 <div class="accordion-body max-w-[826px] opacity-80">
                                                     <p class="pt-5">
-                                                        Deze worden nergens opgeslaan. Je kan wel je ingeven om op de hoogte te worden gehouden van een gratis tool waar je je kalnten in kan opslaan .
+                                                        Deze worden nergens opgeslaan. Je kan wel je gegevens aan ons bezorgen als je graag op de hoogte wordt gehouden over onze gratis (meer uitgebreide) tool waar je onder andere je klanten en reeds gegenereerde facturen in kan opslaan,
+                                                        alsook bewerken.
+                            
+                                        
                                                     </p>
                                                 </div>
                                                 <!-- Accordion Body -->
@@ -431,7 +436,8 @@
                                                 <!-- Accordion Body -->
                                                 <div class="accordion-body max-w-[826px] opacity-80">
                                                     <p class="pt-5">
-                                                        Jazker, er zijn geen limieten
+                                                        Absoluut, er zijn geen limieten aan het maken van facturen op ''gratis factureren''. Let wel dat je de reeds gegenereerde facturen steeds
+                                                        lokaal bewaard op je computer gezien dit niet voorzien is in onze huidige tool.
                                                     </p>
                                                 </div>
                                                 <!-- Accordion Body -->
@@ -442,7 +448,7 @@
                                                 <!-- Accordion Header -->
                                                 <div class="accordion-header relative pr-8 text-xl font-semibold text-ColorBlack">
                                                     <button class="flex-1 text-left">
-                                                        Q. Waarom moet ik mijn adblocker deactiveren
+                                                        Q. Waarom moet ik mijn adblocker deactiveren?
                                                     </button>
                                                     <div class="accordion-icon-2 absolute right-0 top-0">
                                                         <i class="fa-solid fa-chevron-down"></i>
@@ -452,7 +458,7 @@
                                                 <!-- Accordion Body -->
                                                 <div class="accordion-body max-w-[826px] opacity-80">
                                                     <p class="pt-5">
-                                                        Je moet je adblocker deactiveren anders werkt de download niet.
+                                                        Je moet je adblocker deactiveren omdat de download van je factuur anders niet kan starten.
                                                     </p>
                                                 </div>
                                                 <!-- Accordion Body -->
@@ -499,9 +505,10 @@
                                             <p>
                                                 Heb je de smaak te pakken en wil je verder met digitaal factureren? Laat dan je <a
                                                     class="text-white bg-black" href="/#email">email achter</a> en we houden je op de hoogte
-                                                wanneer onze tool klaar is.
+                                                wanneer onze tool klaar is. Je gegevens worden niet gedeeld met partners en we sturen je ook geen andere 
+                                                reclame.
                                             </p>
-                                                        <label>Je email e-mail-adres</label>
+                                                        <label>Je e-mail-adres</label>
                                                         <div class="">
                                                             <input type="email" id="email" class="w-full mb-4"> <button
                                                                 class="bg-black text-white p-6 rounded-xl">Opslaan</button>
